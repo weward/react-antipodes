@@ -38,7 +38,7 @@ console.log(data)
                         resizeClear={true}
                         className={ classes.centered }
                     />
-                </div>
+                </div> 
             }
         
             { data.weather.sunrise !== undefined && 
