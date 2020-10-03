@@ -36,7 +36,7 @@ function App() {
           <Typography variant="h6" className={classes.title}>
             Edward's Antipodes
           </Typography>
-          <Link href="https://weward@bitbucket.org/rolandedwardsantos/react-antipodes.git" target="_blank" color="inherit">Source</Link>
+          <Link href="https://bitbucket.org/rolandedwardsantos/react-antipodes/src/master/" target="_blank" color="inherit">Source</Link>
         </Toolbar>
       </AppBar>
 
