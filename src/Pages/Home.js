@@ -87,14 +87,15 @@ function Home() {
     }
 
     const getWeather = (lat, lng) => {
-        const proxy = 'https://cors-anywhere.herokuapp.com/'
+        // const proxy = 'https://cors-anywhere.herokuapp.com/'
         const API_KEY = process.env.REACT_APP_OPEN_WEATHER_MAP_API_KEY
-        const post_url = `api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lng}&appid=${API_KEY}&units=metric`;
+        const post_url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lng}&appid=${API_KEY}&units=metric`;
 
         return new Promise((resolve, reject) => {
             axios({
                 method: 'GET',
-                url: `${proxy}${post_url}`
+                // url: `${proxy}${post_url}`
+                url: `${post_url}`
             }).then((res) => {
                 const sunrise = new Date(res.data.sys.sunrise * 1000)
                 const hoursRise = sunrise.getHours()

@@ -22,7 +22,7 @@ const useStyles = makeStyles({
 
 function Table({ data }) {
     const classes = useStyles()
-console.log(data)
+
     return (
         <>
             <h3 className={ [classes.title] }>{ data.address }</h3>
